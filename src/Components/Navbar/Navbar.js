@@ -7,7 +7,7 @@ export const Navbar = () => {
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
       <div className='container-fluid'>
         <Link className='navbar-brand' to='/'>
-          MockUp
+          Tiendas
         </Link>
         <button
           className='navbar-toggler'
@@ -23,12 +23,7 @@ export const Navbar = () => {
           <ul className='navbar-nav'>
             <li className='nav-item'>
               <Link className='nav-link active' aria-current='page' to='/'>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/products'>
-                Productos
+                Inicio
               </Link>
             </li>
           </ul>

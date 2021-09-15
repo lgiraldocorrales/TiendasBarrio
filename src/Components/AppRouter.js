@@ -4,6 +4,7 @@ import { Footer } from './Footer/Footer';
 import { Navbar } from './Navbar/Navbar';
 import { HomeScreen } from './Pages/HomeScreen';
 import { Products } from './Pages/Products';
+import { IndexScreen } from './Pages/IndexScreen';
 import { ProductDetail } from './ProductDetail/ProductDetail';
 import { ProductStore1 } from './ProductStore/ProductStore1';
 import { ProductStore2 } from './ProductStore/ProductStore2';
@@ -16,7 +17,8 @@ export const AppRouter = () => {
         <Navbar />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Switch>
-            <Route exact path='/' component={HomeScreen} />
+            <Route exact path='/' component={IndexScreen} />
+            <Route exact path='/home' component={HomeScreen} />
             <Route exact path='/products' component={Products} />
             <Route exact path='/productStore1' component={ProductStore1} />
             <Route exact path='/productStore2' component={ProductStore2} />

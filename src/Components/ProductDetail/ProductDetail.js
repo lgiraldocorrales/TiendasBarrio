@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 export const ProductDetail = () => {
   const [counter, setCounter] = useState(1);
   return (
-    <div className='card text-dark' style={{ width: '30rem' }}>
+    <div className='card text-dark' style={{ width: '20rem' }}>
       <img src={pizza} className='card-img-top' alt='pizza' />
       <div className='card-body'>
         <h2 className='card-title text-dark'>Nombre del producto</h2>
@@ -38,6 +38,7 @@ export const ProductDetail = () => {
             className='btn btn-outline-primary'
             onClick={() => {
               Swal.fire('El producto ha sido añadido exitosamente.');
+              setCounter(1);
             }}>
             Añadir al carrito
           </button>
