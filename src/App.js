@@ -3,7 +3,7 @@ import { AppRouter } from './Components/AppRouter';
 
 function App() {
   return (
-    <div className='bg-dark text-white' style={{ height: '90vh' }}>
+    <div className='bg-dark text-white' style={{ height: '100vh' }}>
       <AppRouter />
     </div>
   );

@@ -13,9 +13,8 @@ const Section = styled.section`
 `;
 
 const Center = styled.div`
-  padding-top: 200px;
+  padding-top: 100px;
   align-items: center;
-  
 `;
 
 const Title = styled.p`
@@ -38,7 +37,7 @@ const Button = styled.button`
   text-align: center;
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(50deg, #82A9F7, #B7D2FA);
+  background: linear-gradient(50deg, #82a9f7, #b7d2fa);
   text-decoration: none;
   box-shadow: 0 15px 14px rgb(0 42 177 / 12%);
 `;
@@ -48,16 +47,19 @@ const span = styled.a`
 `;
 
 export const IndexScreen = () => {
-    return (
+  return (
     <Section>
-        <Center>
-          <Title>
-            ¡Bienvenido, acá encuentras las tiendas de barrio registradas!
-          </Title>
-          <Button>
-            <Link to="/home"><span>Ingresar código QR de la tienda</span><MdKeyboardArrowRight /></Link>
-          </Button>
-        </Center>
+      <Center>
+        <Title>
+          ¡Bienvenido, acá encuentras las tiendas de barrio registradas!
+        </Title>
+        <Button>
+          <Link to='/home'>
+            <span>Ingresar código QR de la tienda</span>
+            <MdKeyboardArrowRight />
+          </Link>
+        </Button>
+      </Center>
     </Section>
   );
 };
