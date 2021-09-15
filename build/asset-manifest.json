@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/static/js/main.e08a7cc0.chunk.js",
+    "main.js.map": "/static/js/main.e08a7cc0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5fdcba51.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5fdcba51.js.map",
+    "static/js/2.4b79b6af.chunk.js": "/static/js/2.4b79b6af.chunk.js",
+    "static/js/2.4b79b6af.chunk.js.map": "/static/js/2.4b79b6af.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.4b79b6af.chunk.js.LICENSE.txt": "/static/js/2.4b79b6af.chunk.js.LICENSE.txt",
+    "static/media/arepa.3ad78272.jpg": "/static/media/arepa.3ad78272.jpg",
+    "static/media/axion.5dd7c960.jpg": "/static/media/axion.5dd7c960.jpg",
+    "static/media/azucar.37ae8250.jpg": "/static/media/azucar.37ae8250.jpg",
+    "static/media/bg-home.b606c348.png": "/static/media/bg-home.b606c348.png",
+    "static/media/bg-image.ad198e2a.png": "/static/media/bg-image.ad198e2a.png",
+    "static/media/car2.b3c0af8d.svg": "/static/media/car2.b3c0af8d.svg",
+    "static/media/dove.2bcad7c8.jpg": "/static/media/dove.2bcad7c8.jpg",
+    "static/media/fab.efdf69e8.jpg": "/static/media/fab.efdf69e8.jpg",
+    "static/media/fabuloso.46859860.jpg": "/static/media/fabuloso.46859860.jpg",
+    "static/media/frijol.09a9834c.jpg": "/static/media/frijol.09a9834c.jpg",
+    "static/media/huevo.ce40ddf6.jpg": "/static/media/huevo.ce40ddf6.jpg",
+    "static/media/pan.052b25ae.jpg": "/static/media/pan.052b25ae.jpg",
+    "static/media/pizza.1c71b509.jpg": "/static/media/pizza.1c71b509.jpg",
+    "static/media/rey.17a6e9ac.jpg": "/static/media/rey.17a6e9ac.jpg",
+    "static/media/sal.a8bf2ad2.jpg": "/static/media/sal.a8bf2ad2.jpg",
+    "static/media/tienda1.b2338bf6.jpg": "/static/media/tienda1.b2338bf6.jpg",
+    "static/media/tienda2.59d72588.jpg": "/static/media/tienda2.59d72588.jpg",
+    "static/media/tienda3.bfd313d3.jpg": "/static/media/tienda3.bfd313d3.jpg",
+    "static/media/tostada.42163e79.jpg": "/static/media/tostada.42163e79.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fdcba51.js",
+    "static/js/2.4b79b6af.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.e08a7cc0.chunk.js"
+  ]
+}
