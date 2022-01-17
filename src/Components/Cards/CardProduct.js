@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Modal from '../../Modal';
 import React, { useState } from "react";
 
-export const CardProduct = ({linkto, name, price, image}) => {
+export const CardProduct = ({linkto, name, price, image, id}) => {
   const [open, setOpen] = useState(false);
   const fclose = () => {
     setOpen(false);
@@ -17,7 +17,7 @@ export const CardProduct = ({linkto, name, price, image}) => {
         <button onClick={(e) => {setOpen(true)}} className='btn btn-primary'>
           Detalle del producto
         </button>
-        <Modal open={open} fclose={fclose} name={name} price={price} image={image}></Modal>
+        <Modal open={open} fclose={fclose} name={name} price={price} image={image} id={id}></Modal>
       </div>
     </div>
   );

@@ -13,19 +13,19 @@ export const ProductStore2 = () => {
       <p>Productos del Autoservicio el mono</p>
       <section className='d-flex'>
         <div className='px-2'>
-          <CardProduct name="Spagghetti Doria" price="$7.999" image={doria}/>
+          <CardProduct name="Spagghetti Doria" price="$7.999" image={doria} id="st2-p1"/>
         </div>
         <div className='px-2'>
-          <CardProduct name="Spagghetti La Muñeca" price="$6.900" image={mnc}/>
+          <CardProduct name="Spagghetti La Muñeca" price="$6.900" image={mnc} id="st2-p2"/>
         </div>
         <div className='px-2'>
-          <CardProduct name="Azucar" price="$5.999" image={azucar}/>
+          <CardProduct name="Azucar" price="$5.999" image={azucar} id="st2-p3"/>
         </div>
         <div className='px-2'>
-          <CardProduct name="Sal" price="$3.999" image={sal}/>
+          <CardProduct name="Sal" price="$3.999" image={sal} id="st2-p4"/>
         </div>
         <div className='px-2'>
-          <CardProduct name="Frijol" price="$10.000" image={frijol}/>
+          <CardProduct name="Frijol" price="$10.000" image={frijol} id="st2-p5"/>
         </div>
       </section>
     </div>

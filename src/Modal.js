@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 //import pizza from '../../TiendasBarrio/src/Images/pizza.jpg';
 import Swal from 'sweetalert2';
 
-function Modal({ open, fclose, name, price, image}) {
+function Modal({ open, fclose, name, price, image, id}) {
   const [counter, setCounter] = useState(1);
   return (
     <div>
@@ -19,54 +19,59 @@ function Modal({ open, fclose, name, price, image}) {
       >
         <DialogContent>
 
-        
-    <div className='card text-dark' style={{ width: '20rem' }}>
-      <img src={image} className='card-img-top' alt='pizza' />
-      <div className='card-body'>
-        <h2 className='card-title text-dark'>Producto: {name}</h2>
-        <h6 class='card-subtitle mb-2 text-muted text-dark'>Codigo SKU: 38749</h6>
-        <h6 class='card-subtitle mb-2 text-muted text-dark'>Precio Producto: {price}</h6>
-        <div>
-          <label className='text-dark'> La cantidad actual es: {counter}</label>
-        </div>
-        <div
-          className='mt-2'
-          style={{ display: 'flex', justifyContent: 'center' }}>
-          <button
-            className='btn btn-primary mx-2'
-            onClick={() => {
-              counter > 1 && setCounter(counter - 1);
-            }}>
-            -1
-          </button>
-          <button
-            className='btn btn-primary mx-2'
-            onClick={() => setCounter(counter + 1)}>
-            +1
-          </button>
-        </div>
-        <div
-          className='mt-2'
-          style={{ display: 'flex', justifyContent: 'center' }}>
-          <button
-            className='btn btn-outline-primary'
-            onClick={() => {
-              fclose();
-              Swal.fire(
-                '¡Añadiste este producto!',
-                'Ahora tienes tus productos en el carrito de compras',
-                'success'
-              );
-              setCounter(1);
-            }}>
-            Añadir al carrito
-          </button>
-        </div>
-      </div>
-    </div>
-
+          <div class="yotpo yotpo-main-widget"
+            data-product-id={id}
+            data-price={price}
+            data-currency={price}
+            data-name={name}
+            data-url={"#"}
+            data-image-url={image}>
+          </div>    
+          <div className='card text-dark' style={{ width: '20rem' }}>
+            <img src={image} className='card-img-top' alt='pizza' />
+            <div className='card-body'>
+              <h2 className='card-title text-dark'>Producto: {name}</h2>
+              <h6 class='card-subtitle mb-2 text-muted text-dark'>Codigo: {id}</h6>
+              <h6 class='card-subtitle mb-2 text-muted text-dark'>Precio Producto: {price}</h6>
+              <div>
+                <label className='text-dark'> La cantidad actual es: {counter}</label>
+              </div>
+              <div
+                className='mt-2'
+                style={{ display: 'flex', justifyContent: 'center' }}>
+                <button
+                  className='btn btn-primary mx-2'
+                  onClick={() => {
+                    counter > 1 && setCounter(counter - 1);
+                  }}>
+                  -1
+                </button>
+                <button
+                  className='btn btn-primary mx-2'
+                  onClick={() => setCounter(counter + 1)}>
+                  +1
+                </button>
+              </div>
+              <div
+                className='mt-2'
+                style={{ display: 'flex', justifyContent: 'center' }}>
+                <button
+                  className='btn btn-outline-primary'
+                  onClick={() => {
+                    fclose();
+                    Swal.fire(
+                      '¡Añadiste este producto!',
+                      'Ahora tienes tus productos en el carrito de compras',
+                      'success'
+                    );
+                    setCounter(1);
+                  }}>
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
         </DialogContent>
-        
       </Dialog>
     </div>
   );
