@@ -10,6 +10,14 @@ import Swal from 'sweetalert2';
 
 function Modal({ open, fclose, name, price, image, id}) {
   const [counter, setCounter] = useState(1);
+  const click = async () => {
+    const settings = {
+      retailer_token: 'AVjWWLHMBfwVfWdxL3GETWtn',
+      integration_code: 'Hombres_Superior' 
+    };
+    const data = await fetch('https://widget.mysz.io/v1/assets/js/mysize-connect.js');
+    console.log(data);
+  }
   return (
     <div>
       <Dialog
@@ -26,7 +34,12 @@ function Modal({ open, fclose, name, price, image, id}) {
             data-name={name}
             data-url={"#"}
             data-image-url={image}>
-          </div>    
+          </div>
+          <div onClick={click}>
+            click
+          </div>
+          
+          
           <div className='card text-dark' style={{ width: '20rem' }}>
             <img src={image} className='card-img-top' alt='pizza' />
             <div className='card-body'>
